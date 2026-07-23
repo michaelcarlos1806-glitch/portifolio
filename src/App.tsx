@@ -21,21 +21,21 @@ export function App() {
       description: "Página moderna desenvolvida para o Ateliê Acetinados, focada em design elegante, apresentação de produtos e conversão de clientes.",
       tags: ["React", "TypeScript", "Tailwind CSS"],
       link: "https://michaelcarlos1806-glitch.github.io/siteatelier/",
-      image: "/AtelierAcetinados.png"
+      image: `${import.meta.env.BASE_URL}AtelierAcetinados.png`
     },
     {
       title: "Landing Page PhoneShop",
       description: "Página moderna focada em performance, design limpo e adaptabilidade total para dispositivos móveis, desenvolvida para o nicho de tecnologia e celulares.",
       tags: ["React", "TypeScript", "Tailwind CSS"],
       link: "https://michaelcarlos1806-glitch.github.io/landig-page-basic/",
-      image: "/phoneshop.png"
+      image: `${import.meta.env.BASE_URL}phoneshop.png`
     },
     {
       title: "Gerenciador Financeiro",
       description: "Aplicação web completa para controle de receitas, despesas e relatórios consolidados por pessoa, focada em robustez e tratamentos de dados.",
       tags: ["React", "TypeScript", "API REST"],
       link: "https://michaelcarlos1806-glitch.github.io/gerenciador-financeiro/",
-      image: "/gerenciadorfinanceiro.png"
+      image: `${import.meta.env.BASE_URL}gerenciadorfinanceiro.png`
     }
   ];
 
@@ -175,7 +175,7 @@ export function App() {
           <div className="absolute inset-0 rounded-full border border-emerald-500/20 animate-spin"></div>
           <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-[#090d16] border-2 border-emerald-500/40 shadow-2xl flex items-center justify-center relative overflow-hidden group">
             <img 
-              src="/imagemmichealport.png" 
+              src={`${import.meta.env.BASE_URL}imagemmichealport.png`} 
               alt="Michael Carlos" 
               className="w-full h-full object-cover scale-125 rounded-full"
             />
@@ -359,7 +359,7 @@ export function App() {
             {/* FOTO 2 - SOBRE MIM */}
             <div className="w-24 h-24 rounded-full bg-[#090d16] border border-emerald-500/50 mb-4 overflow-hidden shadow-lg flex items-center justify-center">
               <img 
-                src="/imagemmichealport.png" 
+                src={`${import.meta.env.BASE_URL}imagemmichealport.png`} 
                 alt="Michael Carlos"
                 className="w-full h-full object-cover scale-125 rounded-full"
               />
